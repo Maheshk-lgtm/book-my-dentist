@@ -10,15 +10,16 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx scripts/seed.ts",
+    "presentation": "node scripts/buildPresentation.cjs"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
     "firebase": "^10.13.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.0",
-    "date-fns": "^3.6.0",
-    "clsx": "^2.1.1"
+    "react-router-dom": "^6.26.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -32,6 +33,7 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "firebase-admin": "^12.3.1",
     "postcss": "^8.4.40",
+    "pptxgenjs": "^4.0.1",
     "tailwindcss": "^3.4.7",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4",
