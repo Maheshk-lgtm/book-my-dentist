@@ -45,9 +45,8 @@ export function NotificationBell() {
             <button
               key={n.id}
               onClick={() => markNotificationRead(n.id)}
-              className={`block w-full text-left px-4 py-3 border-b border-slate-50 last:border-0 hover:bg-slate-50 ${
-                n.read ? 'opacity-60' : ''
-              }`}
+              className={`block w-full text-left px-4 py-3 border-b border-slate-50 last:border-0 hover:bg-slate-50 ${n.read ? 'opacity-60' : ''
+                }`}
             >
               <p className="text-sm font-medium text-ink">{n.title}</p>
               <p className="text-xs text-slate-500 mt-0.5">{n.body}</p>
