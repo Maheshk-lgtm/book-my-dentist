@@ -9,12 +9,12 @@ const env: Record<string, string | undefined> =
     : (typeof process !== 'undefined' && process.env ? process.env : {})
 
 const firebaseConfig = {
-  apiKey: env.VITE_FIREBASE_API_KEY,
-  authDomain: env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: env.VITE_FIREBASE_APP_ID
+  apiKey: env.VITE_FIREBASE_API_KEY || 'AIzaSyC851kdDa5-k7EiSX9urXvi-WuktmoUTV4',
+  authDomain: env.VITE_FIREBASE_AUTH_DOMAIN || 'bmdv1-bf98b.firebaseapp.com',
+  projectId: env.VITE_FIREBASE_PROJECT_ID || 'bmdv1-bf98b',
+  storageBucket: env.VITE_FIREBASE_STORAGE_BUCKET || 'bmdv1-bf98b.firebasestorage.app',
+  messagingSenderId: env.VITE_FIREBASE_MESSAGING_SENDER_ID || '993223171758',
+  appId: env.VITE_FIREBASE_APP_ID || '1:993223171758:web:2a8bf83b940baa0d38573f'
 }
 
 // Guard against re-initialization during HMR.
